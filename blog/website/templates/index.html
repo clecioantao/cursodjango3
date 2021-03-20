@@ -1,0 +1,15 @@
+<h1>Testando templates</h1>
+
+{{ name }}
+
+<ol>
+{% for item in lista_tec %} 
+
+  {% if item == 'Django' %}
+     <li><b> {{ item }} </b></li>
+  {% else %}
+     <li> {{ item }} </li> 
+  {% endif %}
+  
+{% endfor %}
+</ol>
